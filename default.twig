@@ -1,0 +1,56 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+<div class="pt-default">
+
+    <div class="container">
+        <div class="header-profile clearfix">
+            <div class="responsivecolumns">
+
+                <div class="columns-two-left align-left">
+                     {{widget('profile', 'address', { 'profileType':'address' })|raw}}
+                </div>
+
+                <div class="columns-two-right align-right">
+                    {{widget('profile', 'phone', { 'profileType':'phone' })|raw}}
+                    {{widget('profile', 'email', { 'profileType':'email' })|raw}}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header clearfix">
+            {{widget('logo', 'companylogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+
+            {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+        </div>       
+
+        <div class="container-sub clearfix">
+            {{zone('main')|raw}}
+        </div>
+       
+    </div><!-- end container -->
+
+    <div class="footer clearfix">
+        <div class="sub">
+            <div class="responsivecolumns">
+                <div class="columns-two-left align-left">
+                    {{widget('profile', 'business', { 'profileType':'business'})|raw}}
+                    <br>
+                    {{widget('profile', 'strapline', { 'profileType':'strapline'})|raw}}
+                </div>
+                <div class="columns-two-right align-right">
+                    {{widget('socialicons', 'thisunqiuewidgetname', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+             {{widget('profile', '', { 'profileType':'copyright'})|raw}}
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
