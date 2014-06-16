@@ -15,22 +15,16 @@
             "color4":"#000000",
             "color5":"#4A4A4A",
             "color6":"#016FA4",
-            "color7":"#016FA4",
-            "color8":"#000000",
-            "color9":"#000000",
-            "color10":"#D8DDDF"
+            "color7":"#016FA4"
         },
         "Swatch 2": {
-           "color1":"#0670A0",
+           	"color1":"#0670A0",
             "color2":"#ffffff",
             "color3":"#ED312B",
             "color4":"#000000",
             "color5":"#4A4A4A",
             "color6":"#ED312B",
-            "color7":"#ED312B",
-            "color8":"#000000",
-            "color9":"#000000",
-            "color10":"#D8DDDF"
+            "color7":"#ED312B"
         },
         "Swatch 3": {
             "color1":"#2A2A2A",
@@ -39,22 +33,16 @@
             "color4":"#000000",
             "color5":"#4A4A4A",
             "color6":"#BB1903",
-            "color7":"#BB1903",
-            "color8":"#000000",
-            "color9":"#000000",
-            "color10":"#D8DDDF"
+            "color7":"#BB1903"
         },
         "Swatch 4": {
-           "color1":"#A5B2BA",
+           	"color1":"#A5B2BA",
             "color2":"#ffffff",
             "color3":"#FB9E34",
             "color4":"#000000",
             "color5":"#4A4A4A",
             "color6":"#FB9E34",
-            "color7":"#FB9E34",
-            "color8":"#000000",
-            "color9":"#000000",
-            "color10":"#D8DDDF"
+            "color7":"#FB9E34"
         },
         "Swatch 5": {
             "color1":"#9CA10A",
@@ -63,10 +51,7 @@
             "color4":"#000000",
             "color5":"#4A4A4A",
             "color6":"#C7B298",
-            "color7":"#C7B298",
-            "color8":"#000000",
-            "color9":"#000000",
-            "color10":"#D8DDDF"
+            "color7":"#C7B298"
         }
 	},
 	"fontSwatch": {
