@@ -57,6 +57,10 @@ body {
 	}
 }
 
+
+// COLOR SWATCHES =============================================================================================
+
+
 // =============================================================================================
 
 // Typography
@@ -156,14 +160,14 @@ p, ul, ol, li, .p-font {
 		}
 	}
 
-	
-
 	.widget.profile {
 		margin-bottom: (@block-v-space / 4);
 		line-height: 1.5;
 		@media @mobile {
 			margin-bottom: 0;
-
+		}
+		p {
+			display: inline-block;
 		}
 	}
 
@@ -176,12 +180,7 @@ p, ul, ol, li, .p-font {
 		}
 	}
 
-	#address {
-		p {
-			display: inline-block;
-			margin-right: 1em;
-		}
-	}
+	
 
 
 	@media @mobile {
@@ -262,13 +261,17 @@ p, ul, ol, li, .p-font {
 .widget.extendednavigation {
 	margin-bottom: @extendednavigation-bottom-m;
 	ul {
+		// Cancell floating
+		&.align-center, &.align-left, &.align-right {
+			float: none;
+		}
 		
-		float: none;
 		@media @tablet {
 			padding-top: (@pull-icon-size + 20);
 
 		}
 
+		// Menu aligning
 		&.align-center {
 			text-align: center;
 		}
@@ -278,6 +281,8 @@ p, ul, ol, li, .p-font {
 		&.align-right {
 			text-align: right;
 		}
+
+		// Menu Item
 		li {
 			float: none;
 			display: inline-block;
@@ -512,19 +517,40 @@ p, ul, ol, li, .p-font {
 // ======= Widget: Featured Item
 .feature.widget {
 	text-align: center;
-	h2 {
-		span {
-			display: inline-block;
-			background: @color-swatch1; 
-			padding: 0.4em 0.6em;
-		}
+	@media @tablet {
+		margin-top: @block-v-space;
 	}
-	h3 {
-		span {
-			display: inline-block;
-			color: @color-swatch2;
-			background: fade(@color-swatch2, 30%);
-			padding: 0.4em 0.6em;
+	.feature-bgimg {
+		.content {
+			padding: 0 1em;
+			.spare.wrapper {
+				// Header Text
+				h2 {
+					color: @color-swatch8;
+					span {
+						display: inline-block;
+						background: @color-swatch1; 
+						padding: 0.4em 0.6em;
+					}
+				}
+				// Strapline Text
+				h3 {
+					span {
+						display: inline-block;
+						color: @color-swatch2;
+						background: fade(@color-swatch2, 30%);
+						padding: 0.4em 0.6em;
+					}
+				}
+				// Feature Button
+				.feature-btn {
+					button.btn {
+						.btnText {
+
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -839,7 +865,7 @@ button.btn, .widget.feature .btn, input.widget.button {
 			line-height: 1em;
 		}
 		&.image-title {
-	    	
+	    	margin-top: 0.8em;
 	    }
 	    &.image-description {
 	    	
@@ -1121,7 +1147,7 @@ button.btn, .widget.feature .btn, input.widget.button {
 					@media @mobile {
 						display: block;
 						margin-bottom: 10px;
-						
+
 					}
 					label {
 						display: block;
