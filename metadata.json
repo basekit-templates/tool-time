@@ -4,7 +4,7 @@
 	"screenshot":"tool-time.png",
 	"pageTypes": ["home"], 
 	"tags": {
-		"en": ["basic", "simple"]
+		"en": ["basic", "simple", "mechanics", "service", "hardware", "bold colours", "bold colors", "tools", "repair", "building"]
 	},
 	"images":[
         "images/feature-bg.jpg"
