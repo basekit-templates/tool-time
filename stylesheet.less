@@ -290,7 +290,10 @@ p, ul, ol, li, .p-font {
 			// Folder item
 			&.folder {
 				.text {
-					font-size: bkscale(@font-swatch6-font-size, 0.8);
+					@media @tablet {
+						font-size: bkscale(@font-swatch6-font-size, 0.8);
+					}
+					
 				}
 				margin-right: 0;
 				&:after {
@@ -482,7 +485,7 @@ p, ul, ol, li, .p-font {
 		margin-bottom: -(@extendednavigation-bottom-m);
 	}
 
-    ul.open + a.pull {
+    ul[style*="display: block"] + a.pull {
     	 @media @tablet {
     	 	// Cross
     	 	&:after, &:before {
@@ -582,7 +585,7 @@ p, ul, ol, li, .p-font {
 // ======= Widget: ContactForm
 .contactform.widget {
 	.block;
-	background: @color-swatch10;
+	background: fade(@color-swatch1, 35%);
 	border-top: 45px solid @color-swatch2;
 	padding-top: 0;
 	text-align: center;
@@ -713,10 +716,12 @@ p, ul, ol, li, .p-font {
 		}
 	}
 	.content-wrapper {
-		background: fade(@color-swatch4, 16%);
-		padding: 1em 0;
+		// (Appears even without content)
 		.title, .description {
 			color:  @color-swatch4;
+			background: fade(@color-swatch4, 16%);
+			padding: 1em 0.5em;
+			display: block;
 		}
 		.title {
 			font-weight: bold;
@@ -1134,7 +1139,7 @@ button.btn, .widget.feature .btn, input.widget.button {
 				text-align: center;
 				margin-bottom: (@block-v-space / 2);
 				@media @mobile {
-					background: @color-swatch10;
+					background: @color-swatch1;
 					padding: 6px 0 6px 15px;
 				}
 
