@@ -258,17 +258,21 @@ p, ul, ol, li, .p-font {
 @extendednavigation-bottom-m: 44px;
 @extendednavigation-pull-vm: 10px;
 
+// Cancel floating
+div.widget .extendednavigation ul.align-left, div.widget.extendednavigation ul.align-left,
+div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.align-right {
+	float: none !important;
+}
+
 .widget.extendednavigation {
 	margin-bottom: @extendednavigation-bottom-m;
 	ul {
-		// Cancell floating
 		&.align-center, &.align-left, &.align-right {
-			float: none;
+			
 		}
 		
 		@media @tablet {
 			padding-top: (@pull-icon-size + 20);
-
 		}
 
 		// Menu aligning
