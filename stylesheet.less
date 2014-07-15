@@ -878,7 +878,7 @@ div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.
 
 
 // ======= Widget: Button
-button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a {
+button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .widget.blogsearch form button {
 	box-shadow: 0px 3px 0px 0px darken(@color-swatch3, 10%);
 	&:hover {
 		background-color: lighten(@color-swatch6,10%);
@@ -1142,6 +1142,9 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a {
             -webkit-border-radius: 0px;
             -moz-border-radius: 0px;
             border-radius: 0px;
+			vertical-align: top;
+            box-shadow: 0px 3px 0px 0px darken(@color-swatch2, 10%);
+			vertical-align: top;
         }
 
         button {
@@ -1153,6 +1156,8 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a {
             line-height: @font-swatch7-line-height;
             background-color: @font-swatch7-background-color;
             border: none;
+            vertical-align: top;
+            margin: 0;
             &:hover {
                 background-color: @font-swatch7-background-color-hover;
             }
