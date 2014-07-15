@@ -892,10 +892,14 @@ div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.
 
 
 // ======= Widget: Button
-button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .widget.blogsearch form button, .widget.socialicons span a, .bk-profile-socialicons span a {
+button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .widget.blogsearch form button, .widget.socialicons span a, .bk-profile-socialicons span a,
+.checkout-order-button, .contactform button.btn, .widget.ecomcheckout .checkout-order-button, .ecom-product-go-to-checkout-btn {
+	background-color: @color-swatch3;
 	box-shadow: 0px 3px 0px 0px darken(@color-swatch3, 10%);
+	color: @color-swatch2;
 	&:hover {
-		background-color: lighten(@color-swatch6,10%);
+		background-color: lighten(@color-swatch3,20%);
+		text-decoration: none;
 	}
 }
 
