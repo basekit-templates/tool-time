@@ -231,15 +231,19 @@ p, ul, ol, li, .p-font {
 	// Company name
 	.companyname {
 		margin-bottom: 30px;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 		@media @tablet {
 			margin-bottom: 10px;
 		}
 		a {
 			@media @tablet {
 				font-size: bkscale(@font-swatch10-font-size, 0.7);
+				line-height: bkscale(@font-swatch10-line-height, 0.7);				
 			}
 			@media @mobile {
 				font-size: bkscale(@font-swatch10-font-size, 0.4);
+				line-height: bkscale(@font-swatch10-line-height, 0.4);	
 			}
 		}
 		

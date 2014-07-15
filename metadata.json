@@ -143,9 +143,9 @@
 		},
 		"font10": {
 			"font-family": "\"Arvo\", Arial, sans-serif",
-			"font-size": "64px",
+			"font-size": "52px",
 			"font-weight": "600",
-			"line-height": "80px",
+			"line-height": "66px",
 			"color": "@color-swatch4",
 			"background-color": "@color-swatch4",
 			"background-color-hover": "@color-swatch4",
