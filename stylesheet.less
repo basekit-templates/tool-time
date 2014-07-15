@@ -291,10 +291,6 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .
 }
 
 // ======= Form: Select
-
-
-
-
 .widget.ecomproductslist .productlist-filter,
 .widget.ecomcheckout .delivery,
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation
@@ -618,7 +614,7 @@ div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.
 .feature.widget {
 	text-align: center;
 	@media @tablet {
-		margin-top: @block-v-space;
+		margin-top: @block-v-space + 16px;
 	}
 	.feature-bgimg {
 		.content {
@@ -1393,18 +1389,19 @@ div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.
 
 
 // ======= Widget: e-com Checkout
+
 .widget.ecomcheckout {
 	margin-bottom: @block-v-space;
 	// Title
 	.checkout-title {
 		text-align: center;
 	}
-
 	.checkout-productname {
 		line-height: bkscale(@font-swatch5-line-height, 0.7);
 	}
 
 	.checkout-quantitybtn {
+
 		line-height: 1;
 	}
 
@@ -1441,7 +1438,273 @@ div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.
 			}
 		}
 	}
+
+	
+
+	table {
+		margin-bottom: 30px;
+		border: 1px solid darken(@color-swatch1,10%);
+		border-bottom: 0;
+		@media @mobile {
+			border-bottom: 1px solid darken(@color-swatch1,10%);
+		}
+		// Heading Row
+		tr:first-child {
+			outline: 1px solid darken(@color-swatch1,10%);
+	        background-color: darken(@color-swatch1,4%);
+	        -webkit-border-top-left-radius: 4px;
+			-webkit-border-top-right-radius: 4px;
+			-moz-border-radius-topleft: 4px;
+			-moz-border-radius-topright: 4px;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			font-family: @font-swatch4-font-family;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			color: @font-swatch4-color;
+			text-transform: uppercase;
+			@media @mobile {
+				font-size: 12px;
+			}
+			th:first-child {
+				padding-left: 10px;
+			}
+			th:last-child {
+				padding: 0 10px;
+				text-align: left;
+				@media (max-width: 360px) {
+					display: none;
+				}
+			}
+		}
+		// Item Row
+		tr th,
+		tr th:nth-child(3) {
+			padding: 0;
+			border: 0;
+		}
+		@media @mobile {
+			th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+	            width: 100%!important;
+	        }	
+	    }
+		tr td {
+			border-bottom: 1px solid darken(@color-swatch1,10%);
+			@media (max-width: 360px) {
+				float: left;
+				display: table;
+				width: 100%;
+				border-bottom: 0;
+			}
+
+
+
+
+			&:nth-child(1) {
+				padding: 20px;
+				width: auto;
+				@media @mobile {
+					padding: 20px 10px;
+				}
+				@media (max-width: 360px) { 
+					padding: 20px;
+				}
+			}
+			&:nth-child(2) {
+				position: relative;
+				padding: 24px 10px;
+				@media @mobile {
+					padding: 20px 10px 10px 0;
+				}
+				@media (max-width: 360px) { 
+					padding: 0 20px;
+				}
+			}
+			&:nth-child(3) {
+				padding: 10px 20px 10px 10px;
+				border-left: 1px solid darken(@color-swatch1,10%);
+				text-align: left;
+				@media @mobile {
+					padding: 20px 10px;
+					line-height: 26px;
+				}
+				@media (max-width: 360px) { 
+					padding: 10px 20px;
+					border-left: 0;
+					border-top: 1px solid darken(@color-swatch1,10%);
+				}
+			}
+
+
+
+
+
+			.checkout-quantitybtn {
+				padding: 0;
+				margin: 0;
+				border: 1px solid darken(@color-swatch1,10%);
+				background-color: @color-swatch2;
+
+				
+
+				@media @mobile {
+					background-color: transparent;
+					padding: 0;
+					border: 0;
+					margin-bottom: 20px;
+				}
+				button {
+					width: 20px;
+					height: 20px;
+					
+					font-size: 13px;
+					font-family: @font-swatch4-font-family;
+					
+					line-height: 17px;
+
+					background-color: @color-swatch3;
+					color: @color-swatch2;
+					&:hover {
+						background-color: lighten(@color-swatch3,20%);
+					}
+					&:focus {
+						outline: none;
+					}
+				}
+				span {
+					width: 46px;
+					font-family: @font-swatch4-font-family;
+					font-size: 16px;
+					letter-spacing: @font-swatch4-letter-spacing;
+					color: @font-swatch4-color;
+					@media @mobile {
+						width: 36px;
+					}
+				}
+			}
+		}
+		tr:last-child td:first-child {
+			@media (max-width: 360px) { 
+				display: none;
+			}
+		}
+		// Quantity
+		.checkout-productname,
+		.checkout-quantity,
+		.checkout-subtotal {
+			font-family: @font-swatch4-font-family;
+			font-size: 18px;
+			font-weight: @font-swatch4-font-weight;
+			line-height: @font-swatch4-line-height;
+			letter-spacing: @font-swatch4-letter-spacing;
+			color: @font-swatch4-color;
+		}
+		.checkout-quantitybtn,
+		.checkout-quantity {
+			position: absolute;
+			right: 20px;
+			width: 96px;
+			@media (max-width: 940px) {
+				position: relative;
+				top: 0;
+				right: 0;
+			}
+		}
+		.checkout-quantity {
+			top: 10px;
+			font-size: 16px;
+			color: @color-swatch5;
+			@media @mobile {
+				top: 0;
+			}
+		}
+		.checkout-quantitybtn {
+			top: 45px;
+			@media (max-width: 940px) {
+				top: 10px;
+			}
+			@media @mobile {
+				top: 0;
+			}
+
+		}
+		.checkout-pricepu {
+			line-height: 26px;
+			@media @mobile {
+				line-height: inherit;
+			}
+		}
+		.checkout-productname,
+		.checkout-quantity,
+		.checkout-subtotal {
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+	}
+
+	
+	// Continue to Payment Button
+	.checkout-order-button {
+		margin-bottom: 30px;
+		&:disabled {
+			opacity: 0.2;
+		}
+	}
+	// 
+	.js-shipping-opts {
+		border-bottom: 1px solid darken(@color-swatch1,10%);
+		padding-bottom: 20px;
+		font-size: 14px;
+		line-height: 26px;
+		margin-bottom: 20px;
+		label {
+			margin-bottom: 10px;
+		}
+	}
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ======= Widget: e-com Categories List
