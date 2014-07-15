@@ -200,7 +200,7 @@ p, ul, ol, li, .p-font {
 
 	// Company logo
 	.widget.logo {
-
+		margin-bottom: -20px;
 		&:before {
 			content: '';
 			display: block;
@@ -233,11 +233,7 @@ p, ul, ol, li, .p-font {
 		margin-bottom: 30px;
 		margin-left: 0.5em;
 		margin-right: 0.5em;
-
-		// When Company Logo Widget is hidden
-		&:first-child {
-			margin-top: 2em;
-		}
+		margin-top: 20px;
 
 		@media @tablet {
 			margin-bottom: 10px;
@@ -255,6 +251,8 @@ p, ul, ol, li, .p-font {
 		
 	}
 }
+
+
 
 .pt-default .header {
 	border-bottom: 1px solid @color-swatch1;
@@ -745,7 +743,7 @@ div.widget .extendednavigation ul.align-right, div.widget.extendednavigation ul.
 		.title, .description {
 			color:  @color-swatch4;
 			background: fade(@color-swatch4, 16%);
-			padding: 1em 0.5em;
+			padding: 0 0.5em;
 			display: block;
 		}
 		.title {
@@ -910,7 +908,7 @@ button.btn, .widget.feature .btn, input.widget.button {
 	.menu-section-list {
 		border-bottom: 1px solid @color-swatch1;
 		text-align: center;
-	}	
+	}
 }
 
 // MENU WIDGETS =============================================================================================
