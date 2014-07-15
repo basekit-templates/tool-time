@@ -1,11 +1,11 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
-
+@import "@{templateLocal}/shame.less";
 
 
 @block-v-space: 30px;
-
 @body-h-margin: 10px;
+
 
 // =============================================================================================
 
@@ -275,6 +275,11 @@ p, ul, ol, li, .p-font {
 
 
 // ======= Widget: EXTENDED NAVIGATION
+
+
+
+
+
 @extendednavigation-bottom-m: 44px;
 @extendednavigation-pull-vm: 10px;
 
@@ -1347,6 +1352,10 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .
 	// Title
 	.checkout-title {
 		text-align: center;
+	}
+
+	.checkout-productname {
+		line-height: bkscale(@font-swatch5-line-height, 0.7);
 	}
 
 	.checkout-quantitybtn {
