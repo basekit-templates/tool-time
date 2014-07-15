@@ -3,6 +3,7 @@
 	"thumbnail":"tool-time.png",
 	"screenshot":"tool-time.png",
 	"pageTypes": ["home"], 
+	"templateType":"general",
 	"tags": {
 		"en": ["basic", "simple", "mechanics", "service", "hardware", "bold colours", "bold colors", "tools", "repair", "building"]
 	},
