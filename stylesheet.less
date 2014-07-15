@@ -1290,9 +1290,10 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .
 			a {
 				display: block;
 				padding: 16px;
-				border: 1px solid @color-swatch1;
+				border: 1px solid fade(@color-swatch5, 16%);
 				&:hover {
 					border-color: @color-swatch3;
+					text-decoration: none;
 				}
 			}
 			// Image
@@ -1347,8 +1348,8 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .
 	// Checkout form
 	.checkout-form {
 		max-width: 60%;
-		margin: 0 auto;
-		border: 1px solid lighten(@color-swatch5, 55%);;
+		margin: 2em auto 0;
+		background: fade(@color-swatch1, 35%);
 		padding: 1.6em;
 		@media @tablet {
 			max-width: 86%;
@@ -1356,8 +1357,25 @@ button.btn, .widget.feature .btn, input.widget.button, .widget.tweet .tweet a, .
 		@media @mobile {
 			max-width: 100%;
 		}
+
+		.delivery-title {
+			color: @color-swatch5;
+		}
 		#postcode {
 			max-width: 8em;
+		}
+
+		.form-group {
+			label {
+				font-family: @font-swatch4-font-family;
+				font-weight: bold;
+			}
+			input {
+				&:focus {
+					border-color: @color-swatch1;
+					background-color: lighten(@color-swatch1, 45%);
+				}
+			}
 		}
 	}
 }
